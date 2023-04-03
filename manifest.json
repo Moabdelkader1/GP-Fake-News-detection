@@ -1,0 +1,26 @@
+{
+    "name": "Fake news detector",
+    "version": "1.0",
+    "description": "Highlight over article to detect if it's fake or not",
+    "icons":{ 
+      "128": "assets/find128.png" ,
+      "48" : "assets/find48.png" ,
+      "16" : "assets/find16.png"
+    },
+    "manifest_version": 3,
+    "permissions": ["storage", "contextMenus" ,"activeTab", "browsingData","notifications"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "run_at": "document_idle",
+        "js": ["contentScript.js"]
+      }
+    ],
+    "action": {
+      "default_title": "Fake News",
+      "default_popup": "popup.html"
+    } 
+}
