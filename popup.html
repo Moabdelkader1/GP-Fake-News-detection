@@ -3,12 +3,26 @@
   <head>
     <link rel="stylesheet" href="popup.css">
     <script src="popup.js"></script>
+    
   </head>
-  <body style="margin: 0px;">
-    <div class="outer-container">
+  <body style="margin: 0px; height: 160px; ">
+    <div class="outer-container ">
       <div class="inner-container">
-        <div class="result">False</div>
+        <button id="refresh-button" style="display: none;">Refresh</button>
+        <div class="result"></div>
+        <button id="user-manual">How To Use</button>
+
       </div>
+      <p id="outer-text" style="display: none;">
+        Instructions: <br>
+        1-Open any website <br> 
+        2-Highlight any article <br>
+        3-Right click on the highlighted text <br>
+        4-Click on "detect speech credibility" option <br>
+        5-You will be sent a notification with the result <br>
+        6-You can see the result on the application icon as well <br> 
+      </p>
+      <button id="Done-button" style="display: none;"> Done </button>
     </div>
   </body>
 </html>
