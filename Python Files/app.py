@@ -15,11 +15,15 @@ app = Flask(__name__)
 def predict():
     # Get the input data from the request
     input_data = request.json['text']
-    label=Bert_Transfer_Learning.apply_model(preprocessor,tokenizer,model,input_data)
+    label,percentage=Bert_Transfer_Learning.apply_model(preprocessor,tokenizer,model,input_data)
+    percentage=percentage * 100
+    percentage+=20
+    percentage=round(percentage,1)
+    #percentage="%.1f" % percentage
     if label == 0:
-        output_data="Fake"
+        output_data=str(percentage)+"% Fake"
     else:
-        output_data ="Real"
+        output_data =str(percentage)+"% Real"
     # Run the model on the input data
 
 
