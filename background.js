@@ -33,7 +33,7 @@ chrome.contextMenus.onClicked.addListener(function(info,tab){
     type: 'basic',
     iconUrl: 'assets/find48.png',
     title: data.result ,
-    message: "this data is" +" "+ data.result 
+    message: "This article is" +" "+ data.result 
   };
   chrome.notifications.create(notif,function(){
 
