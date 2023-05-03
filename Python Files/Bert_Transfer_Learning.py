@@ -30,8 +30,13 @@ def create_model():
     arabert_tokenizer = AutoTokenizer.from_pretrained(model_name)
     arabert_model = AutoModel.from_pretrained(model_name)
     model = BERT_Arch(arabert_model)
-    model.load_state_dict(torch.load('weights\Bert Transfer Learning\c3_BERT_25%data_65%accuracy.pt'))
+    model.load_state_dict(torch.load('weights\c3_new_model_weights.pt'))
     return arabert_prep,arabert_tokenizer,model
+
+def softmax(x):
+    """Compute softmax values for each set of scores in x."""
+    e_x = np.exp(x - np.max(x))
+    return e_x / e_x.sum(axis=0)
 
 def apply_model(preprocessor,tokenizer,model,text):
     preprocessed = [preprocessor.preprocess(text)]
@@ -45,6 +50,15 @@ def apply_model(preprocessor,tokenizer,model,text):
     attention_masks = torch.tensor(tokens['attention_mask'])
     with torch.no_grad():
         preds=model(input_ids,attention_masks)
+
         preds=preds.detach().cpu().numpy()
-    preds=np.argmax(preds,axis=1)
-    return preds[0]
+    preds_vec=preds[0]
+    max_value=max(preds_vec)
+    newpreds=[x-max_value for x in preds_vec]
+    outputpreds=softmax(newpreds)
+    print(outputpreds)
+    index=np.argmax(outputpreds)
+    percentage=outputpreds[index]
+    print(percentage)
+    #index=outputpreds
+    return index,percentage

@@ -1,9 +1,5 @@
 from flask import Flask, request, jsonify
 import Bert_Transfer_Learning
-import TextPreprocessing
-import numpy as np
-
-
 # Load your TensorFlow model
 preprocessor,tokenizer,model=Bert_Transfer_Learning.create_model()
 
@@ -21,9 +17,9 @@ def predict():
     percentage=round(percentage,1)
     #percentage="%.1f" % percentage
     if label == 0:
-        output_data=str(percentage)+"% Fake"
+        output_data="Fake by "+str(percentage)+"%"
     else:
-        output_data =str(percentage)+"% Real"
+        output_data="Real by "+str(percentage)+"%"
     # Run the model on the input data
 
 
