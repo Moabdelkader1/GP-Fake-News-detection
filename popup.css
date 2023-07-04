@@ -83,7 +83,7 @@
   cursor: pointer;
   border-radius: 5px;
   width: 60px;
-  height: 33px;
+  height: 63px;
   
 
  position: absolute;
@@ -93,4 +93,41 @@
 }
 #user-manual:hover {
   text-decoration: underline;
+}
+#Local-History { 
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 8px;
+  margin: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 60px;
+  height: 33px;
+  
+
+ position: absolute;
+ bottom: 0px;
+ right: 0px;
+
+}
+#Local-History:hover {
+  text-decoration: underline;
+}
+#history-list .speech {
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#history-list .speech.truncated {
+  white-space: initial;
+  overflow: visible;
+  text-overflow: initial;
 }
