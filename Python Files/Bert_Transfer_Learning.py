@@ -24,6 +24,8 @@ class BERT_Arch(nn.Module):
       x = self.softmax(x)                       # apply softmax activation
       return x
 
+
+
 def create_model():
     model_name = "aubmindlab/bert-base-arabertv2"
     arabert_prep = ArabertPreprocessor(model_name=model_name)
