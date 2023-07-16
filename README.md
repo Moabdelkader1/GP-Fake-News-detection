@@ -51,6 +51,7 @@ We have tested our project using unseen test data from the Arabic Fake News Data
 We would like to acknowledge and express our gratitude to the authors of the Arabic Fake News Dataset (AFND) [1] and AUBmindLabs for AraBERT MODEL. Their products played a vital role in developing, completing and evaluating our Arabic Fake News Detection system.
 
 [1] AraBERT Model:[Link to model on HugginFace](https://huggingface.co/aubmindlab/bert-base-arabertv2?text=%D8%B9%D8%A7%D8%B5%D9%85+%2B%D8%A9+%D9%85%D8%B5%D8%B1+%D9%87%D9%8A+%5BMASK%5D+.)
+
 [2] Arabic Fake News Dataset (AFND): [Link to the dataset](https://www.sciencedirect.com/science/article/pii/S2352340922003493)
 
 ## Contact
