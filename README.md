@@ -10,7 +10,7 @@ The challenging nature of the Arabic language and the scarcity of Arabic fake ne
 
 ## Features
 - User-friendly interface as a Google Chrome extension
-- Utilizes the Arabert model from Hugging Face for accurate Arabic text processing
+- Utilizes the Arabert model[1] from Hugging Face for accurate Arabic text processing
 
 ## Technologies Used
 - Python: for the core functionality and implementation of the fake news detection algorithm
@@ -45,10 +45,10 @@ We welcome contributions to our project! Here's how you can contribute:
 - Contribute code or documentation improvements by submitting a pull request.
 
 ## Testing
-We have tested our project using unseen test data from the Arabic Fake News Dataset (AFND) [1], as well as various real and fake articles and tweets from the internet. This testing allowed us to evaluate the performance and accuracy of our project. You can use the provided test scripts or test cases to verify the functionality of the Arabic Fake News Detection system.
+We have tested our project using unseen test data from the Arabic Fake News Dataset (AFND) [2], as well as various real and fake articles and tweets from the internet. This testing allowed us to evaluate the performance and accuracy of our project. You can use the provided test scripts or test cases to verify the functionality of the Arabic Fake News Detection system.
 
 ## Acknowledgments
-We would like to acknowledge and express our gratitude to the authors of the Arabic Fake News Dataset (AFND) [1] and AUBmindLabs for AraBERT MODEL. Their products played a vital role in developing, completing and evaluating our Arabic Fake News Detection system.
+We would like to acknowledge and express our gratitude to the authors of the Arabic Fake News Dataset (AFND) [2] and AUBmindLabs for AraBERT MODEL[1]. Their products played a vital role in developing, completing and evaluating our Arabic Fake News Detection system.
 
 [1] AraBERT Model:[Link to model on HuggingFace](https://huggingface.co/aubmindlab/bert-base-arabertv2?text=%D8%B9%D8%A7%D8%B5%D9%85+%2B%D8%A9+%D9%85%D8%B5%D8%B1+%D9%87%D9%8A+%5BMASK%5D+.)
 
