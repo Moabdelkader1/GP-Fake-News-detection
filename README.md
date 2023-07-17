@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Arabic Fake News Detection using Deep Learning
 
 ![Project Logo](./images/Logo.png)
