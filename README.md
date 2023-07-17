@@ -60,6 +60,3 @@ If you have any questions, feedback, or suggestions, please reach out to us thro
 We value your contribution and appreciate your support in combating fake news in Arabic!
 
 Feel free to customize and modify the above template as per your specific project requirements.
-=======
-# GP-Fake-News-detection
-A web extension detects whether any article or document is fake or real on any website using Deep Learning and NLP techniques.
