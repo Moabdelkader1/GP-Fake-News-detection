@@ -1,6 +1,6 @@
 # Arabic Fake News Detection using Deep Learning
 
-![Project Logo](./images/logo.png)
+![Project Logo](./images/Logo.png)
 
 ## Description
 This project aims to help users detect Arabic fake news in various forms such as articles, tweets, and statements using deep learning and natural language processing (NLP). The project provides a user-friendly Google Chrome extension interface that leverages the power of the Arabert model from Hugging Face.
